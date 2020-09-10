@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Title from './components/Title';
 import Calculator from './components/Calculator';
-import Form from './components/Form';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator title="My React Calculator" />
-    <Form />
+    <Title title="My React Calculator" />
+    <Calculator />
   </React.StrictMode>,
   document.getElementById('root')
 );
