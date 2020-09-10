@@ -23,23 +23,3 @@ body {
 h1 {
   padding: 2rem;
 }
-
-form {
-  padding: 2rem;
-}
-
-label {
-  display: block;
-  padding-bottom: 2rem;
-}
-
-input, select {
-  margin-left: 0.5rem;
-}
-
-#calculateButton {
-  padding: 6px 32px;
-  border-radius: 16px;
-  background-color: #5f9ea0;
-  color: #ffffff;
-}
