@@ -24,7 +24,7 @@ function Form ()
                 <input type="number" name="input2" />
             </label>
 
-            <input type="submit" value="Calculate" />
+            <button id="calculateButton" type="submit" value="Submit">Calculate</button> 
         </form>
     )
 }

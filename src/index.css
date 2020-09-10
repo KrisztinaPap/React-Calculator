@@ -7,3 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  padding: 2rem;
+}
+
+form {
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+input, select {
+  margin-left: 0.5rem;
+}
+
+#calculateButton {
+  padding: 6px 32px;
+  border-radius: 16px;
+  background-color: #5f9ea0;
+  color: #ffffff;
+}

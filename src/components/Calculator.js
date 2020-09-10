@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Heading ( props )
+function Calculator ( props )
 {
     return (
         <h1>
@@ -9,4 +9,4 @@ function Heading ( props )
     )
 }
 
-export default Heading;
+export default Calculator;
