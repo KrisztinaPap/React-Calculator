@@ -1,3 +1,23 @@
+# Title
+My React Calculator
+
+## Purpose
+To build a simple calculator using create-react-app
+
+## Author
+Krisztina Pap
+
+## Last Edit
+September 10, 2020
+
+## Resources
+[React Documentation: Forms](https://reactjs.org/docs/forms.html)
+
+## Trello Project Board
+https://trello.com/b/kU0ptJmt/react-calculator
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
