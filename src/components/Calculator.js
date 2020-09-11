@@ -17,11 +17,11 @@ function Calculator ()
                     onChange={ event => { setInput1( event.target.value ) } }
                     />
             <label>Operation:
-                <select>            
-                    <option value="addition">+</option>
-                    <option value="subtraction">-</option>
-                    <option value="multiplication">*</option>
-                    <option value="division">/</option>
+                <select onChange={ event => { setOperation( event.target.value ) } }>            
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
                 </select>
             </label>
             <label>Input 2:</label>
