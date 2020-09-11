@@ -2,18 +2,23 @@ form {
     padding: 2rem;
   }
   
-  label {
-    display: block;
-    padding-bottom: 2rem;
-  }
-  
-  input, select {
-    margin-left: 0.5rem;
-  }
-  
-  #calculateButton {
-    padding: 6px 32px;
-    border-radius: 16px;
-    background-color: #5f9ea0;
-    color: #ffffff;
-  }
+label {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+input, select {
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#calculateButton {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 32px;
+  border-radius: 16px;
+  background-color: #5f9ea0;
+  color: #ffffff;
+}
