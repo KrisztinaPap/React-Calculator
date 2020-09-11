@@ -12,7 +12,23 @@ function Calculator ()
 
     const calculateResult = ( event ) => {
         event.preventDefault();
-        setResult( Number(input1)+Number(input2) );
+        
+        switch(operator) {
+            case '+':
+                setResult( Number(input1)+Number(input2) );
+                break;
+            case '-':
+                setResult( Number(input1)-Number(input2) );
+                break;
+            case '*':
+                setResult( Number(input1)*Number(input2) );
+                break;            
+            case '/':
+                setResult( Number(input1)/Number(input2) );
+                break;
+            default:
+                break;
+        }
     }
 
     return (
