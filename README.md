@@ -8,10 +8,11 @@ To build a simple calculator using create-react-app
 Krisztina Pap
 
 ## Last Edit
-September 10, 2020
+September 11, 2020
 
 ## Resources
-[React Documentation: Forms](https://reactjs.org/docs/forms.html)
+- [React Documentation: Forms](https://reactjs.org/docs/forms.html)
+- Troubleshooting help from Aaron Barthel! Thank you, Aaron!
 
 ## Trello Project Board
 https://trello.com/b/kU0ptJmt/react-calculator
