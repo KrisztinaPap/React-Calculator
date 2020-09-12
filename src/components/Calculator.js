@@ -15,16 +15,16 @@ function Calculator ()
         
         switch(operator) {
             case '+':
-                setResult( Number(input1)+Number(input2) );
+                setResult( (Number(input1)+Number(input2)).toFixed(4) );
                 break;
             case '-':
-                setResult( Number(input1)-Number(input2) );
+                setResult( (Number(input1)-Number(input2)).toFixed(4) );
                 break;
             case '*':
-                setResult( Number(input1)*Number(input2) );
+                setResult( (Number(input1)*Number(input2)).toFixed(4) );
                 break;            
             case '/':
-                setResult( Number(input1)/Number(input2) );
+                setResult( (Number(input1)/Number(input2)).toFixed(4) );
                 break;
             default:
                 break;
@@ -33,7 +33,8 @@ function Calculator ()
 
     return (
         <form onSubmit={ calculateResult }>
-
+            <p id="operation">{input1} {operator} {input2} = </p>
+            <p id="result">{ result }</p>
             <label>Input 1:</label>
                 <input
                     type="number" 
@@ -56,7 +57,6 @@ function Calculator ()
                     value={ input2 }
                 />
             <input id="calculateButton" type="submit" value="Calculate" /> 
-            <p>{ result }</p>
         </form>
     )
 }
