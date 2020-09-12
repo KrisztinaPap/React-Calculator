@@ -7,7 +7,7 @@ function Calculator ()
     const [ input1, setInput1 ] = useState(0);
     const [ operator, setOperator ] = useState( '+' );
     const [ input2, setInput2 ] = useState(0);
-    const [ result, setResult ] = useState( "" );
+    const [ result, setResult ] = useState(0);
 
 
     const calculateResult = ( event ) => {
@@ -29,6 +29,13 @@ function Calculator ()
             default:
                 break;
         }
+    }
+
+    const resetCalculator = () => {
+        setInput1(0);
+        setInput2(0);
+        setResult(0);
+        setOperator('+');
     }
 
     return (
@@ -57,6 +64,7 @@ function Calculator ()
                     value={ input2 }
                 />
             <input id="calculateButton" type="submit" value="Calculate" /> 
+            <input id="resetButton" type="submit" value="Reset Calculator" onClick={ resetCalculator } /> 
         </form>
     )
 }

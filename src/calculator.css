@@ -41,6 +41,19 @@ input, select {
   cursor: pointer;
 }
 
+#resetButton {
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #006400;
+}
+
+#resetButton:hover,
+#resetButton:focus {
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 #operation {
   margin: 1rem;
   color: #ffffff;
