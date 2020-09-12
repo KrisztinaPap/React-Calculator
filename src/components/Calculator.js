@@ -33,21 +33,21 @@ function Calculator ()
 
     return (
         <form onSubmit={ calculateResult }>
+
             <label>Input 1:</label>
-                <input 
+                <input
                     type="number" 
                     name="input1" 
                     onChange={ event => { setInput1( event.target.value ) } }
                     value={ input1 }
                     />
-            <label>Operation:
+            <label>Operation:</label>
                 <select onChange={ event => { setOperator( event.target.value ) } } value={ operator }>            
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>
                     <option value="/">/</option>
                 </select>
-            </label>
             <label>Input 2:</label>
                 <input 
                     type="number" 

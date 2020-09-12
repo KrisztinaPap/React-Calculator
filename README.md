@@ -12,7 +12,9 @@ September 11, 2020
 
 ## Resources
 - [React Documentation: Forms](https://reactjs.org/docs/forms.html)
-- Troubleshooting help from Aaron Barthel! Thank you, Aaron!
+- Troubleshooting help from Aaron Barthel (function was outside my main function) - Thank you, Aaron!
+- [w3schools: HTML form elements](https://www.w3schools.com/html/html_form_elements.asp)
+
 
 ## Trello Project Board
 https://trello.com/b/kU0ptJmt/react-calculator
