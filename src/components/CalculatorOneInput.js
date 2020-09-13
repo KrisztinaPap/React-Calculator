@@ -43,8 +43,6 @@ function CalculatorOneInput ()
                     let tempResult = (myNumbers[i] * myNumbers[i+1]);
                     myOperators.splice(i, 1);
                     myNumbers.splice(i, 2, tempResult);
-                    console.log(myOperators);
-                    console.log(myNumbers);
                 } 
             }
         }
@@ -59,8 +57,6 @@ function CalculatorOneInput ()
                     let tempResult = (myNumbers[i] / myNumbers[i+1]);
                     myOperators.splice(i, 1);
                     myNumbers.splice(i, 2, tempResult);
-                    console.log(myOperators);
-                    console.log(myNumbers);
                 } 
             }
         }
@@ -75,8 +71,6 @@ function CalculatorOneInput ()
                     let tempResult = (Number(myNumbers[i]) + Number(myNumbers[i+1]));
                     myOperators.splice(i, 1);
                     myNumbers.splice(i, 2, tempResult);
-                    console.log(myOperators);
-                    console.log(myNumbers);
                 } 
             }
         }
@@ -91,8 +85,6 @@ function CalculatorOneInput ()
                     let tempResult = (Number(myNumbers[i]) - Number(myNumbers[i+1]));
                     myOperators.splice(i, 1);
                     myNumbers.splice(i, 2, tempResult);
-                    console.log(myOperators);
-                    console.log(myNumbers);
                 } 
             }
         }
