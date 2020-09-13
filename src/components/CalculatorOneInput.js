@@ -110,6 +110,7 @@ function CalculatorOneInput ()
                     onChange={ event => { setUserInput( event.target.value ) } }
                     value={ userInput }
                     />
+                <p>* Calculator cannot handle brackets at this time</p>
             <input id="calculateButton" type="submit" value="Calculate" /> 
             <input id="resetButton" type="submit" value="Reset Calculator" onClick={ resetCalculator } /> 
         </form>
