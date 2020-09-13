@@ -6,13 +6,14 @@ function CalculatorOneInput ()
 {
     const [ userInput, setUserInput ] = useState("");
     const [ result, setResult ] = useState(0);
-    const [ myNumbers, setNumberArray ] = useState([]); 
-    const [ myOperators, setOperatorArray ] = useState([]);
+    let myNumbers = []; 
+    let myOperators = [];
     let newOperatorArray = [];
+
 
     const breakUpInput = ( event ) => {
         event.preventDefault();
-        setNumberArray ( userInput.split( /[*+/-]/gi ));
+        myNumbers = userInput.split( /[*+/-]/gi );
 
         let operatorArray = userInput.split(/[0123456789]/);
         for (let i=0; i<operatorArray.length; i++) {
@@ -20,31 +21,86 @@ function CalculatorOneInput ()
                 newOperatorArray.push(operatorArray[i]);
             }
         }       
-        setOperatorArray( newOperatorArray );
+        myOperators = newOperatorArray;
+
+        doMultiplication();
+        doDivision();
+        doAddition();
+        doSubtraction();
+        giveFinalResult();
     }
 
     // Function to look for multiplication
+        // Loop through operators while one exists
+        // When operator is *, multiply appropriate two items in the myNumbers array AND replace them with result AND remove operator
 
-/*     const calculateResult = ( event ) => {
-        event.preventDefault();
-        
-        switch(operator) {
-            case '+':
-                setResult( (Number(input1)+Number(input2)).toFixed(4) );
-                break;
-            case '-':
-                setResult( (Number(input1)-Number(input2)).toFixed(4) );
-                break;
-            case '*':
-                setResult( (Number(input1)*Number(input2)).toFixed(4) );
-                break;            
-            case '/':
-                setResult( (Number(input1)/Number(input2)).toFixed(4) );
-                break;
-            default:
-                break;
+    const doMultiplication = ( ) => {
+
+        while (myOperators.includes("*")) {
+            for (let i=0; i<myOperators.length; i++) {
+            
+                if ( myOperators[i] === "*" ) {
+                    let tempResult = (myNumbers[i] * myNumbers[i+1]);
+                    myOperators.splice(i, 1);
+                    myNumbers.splice(i, 2, tempResult);
+                    console.log(myOperators);
+                    console.log(myNumbers);
+                } 
+            }
         }
-    } */
+    }
+
+    const doDivision = ( ) => {
+
+        while (myOperators.includes("/")) {
+            for (let i=0; i<myOperators.length; i++) {
+            
+                if ( myOperators[i] === "/" ) {
+                    let tempResult = (myNumbers[i] / myNumbers[i+1]);
+                    myOperators.splice(i, 1);
+                    myNumbers.splice(i, 2, tempResult);
+                    console.log(myOperators);
+                    console.log(myNumbers);
+                } 
+            }
+        }
+    }
+
+    const doAddition = ( ) => {
+
+        while (myOperators.includes("+")) {
+            for (let i=0; i<myOperators.length; i++) {
+            
+                if ( myOperators[i] === "+" ) {
+                    let tempResult = (Number(myNumbers[i]) + Number(myNumbers[i+1]));
+                    myOperators.splice(i, 1);
+                    myNumbers.splice(i, 2, tempResult);
+                    console.log(myOperators);
+                    console.log(myNumbers);
+                } 
+            }
+        }
+    }
+
+    const doSubtraction = ( ) => {
+
+        while (myOperators.includes("-")) {
+            for (let i=0; i<myOperators.length; i++) {
+            
+                if ( myOperators[i] === "-" ) {
+                    let tempResult = (Number(myNumbers[i]) - Number(myNumbers[i+1]));
+                    myOperators.splice(i, 1);
+                    myNumbers.splice(i, 2, tempResult);
+                    console.log(myOperators);
+                    console.log(myNumbers);
+                } 
+            }
+        }
+    }
+
+    const giveFinalResult = () => {
+        setResult( myNumbers );
+    }
 
     const resetCalculator = () => {
         setUserInput("");
@@ -54,8 +110,7 @@ function CalculatorOneInput ()
     return (
         <form onSubmit={ breakUpInput }> 
             <p id="result">{ result }</p>
-            <p id="myNumbers">{ myNumbers }</p>
-            <p id="myOperators">{ myOperators }</p>
+
             <label>Enter your equation:</label>
                 <input
                     type="text" 
