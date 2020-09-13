@@ -6,24 +6,24 @@ function CalculatorOneInput ()
 {
     const [ userInput, setUserInput ] = useState("");
     const [ result, setResult ] = useState(0);
-    let myNumbers = [];
-    let operatorArray =[];
-    let myOperators = [];
+    const [ myNumbers, setNumberArray ] = useState([]); 
+    const [ myOperators, setOperatorArray ] = useState([]);
+    let newOperatorArray = [];
 
     const breakUpInput = ( event ) => {
         event.preventDefault();
-        myNumbers = userInput.split( /[*+/-]/gi );
-        operatorArray = userInput.split(/[0123456789]/);
+        setNumberArray ( userInput.split( /[*+/-]/gi ));
+
+        let operatorArray = userInput.split(/[0123456789]/);
         for (let i=0; i<operatorArray.length; i++) {
             if (operatorArray[i] !== "") {
-                myOperators.push(operatorArray[i]);
+                newOperatorArray.push(operatorArray[i]);
             }
-        }
-        console.log(myNumbers);
-        console.log(myOperators);
-        
+        }       
+        setOperatorArray( newOperatorArray );
     }
 
+    // Function to look for multiplication
 
 /*     const calculateResult = ( event ) => {
         event.preventDefault();
@@ -54,6 +54,8 @@ function CalculatorOneInput ()
     return (
         <form onSubmit={ breakUpInput }> 
             <p id="result">{ result }</p>
+            <p id="myNumbers">{ myNumbers }</p>
+            <p id="myOperators">{ myOperators }</p>
             <label>Enter your equation:</label>
                 <input
                     type="text" 
