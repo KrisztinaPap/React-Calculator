@@ -7,14 +7,21 @@ function CalculatorOneInput ()
     const [ userInput, setUserInput ] = useState("");
     const [ result, setResult ] = useState(0);
     let myNumbers = [];
-    //const myOperators = [];
+    let operatorArray =[];
+    let myOperators = [];
 
     const breakUpInput = ( event ) => {
         event.preventDefault();
-        const theOperators = /[*+/-]/gi;
-        myNumbers = userInput.split( theOperators );
+        myNumbers = userInput.split( /[*+/-]/gi );
+        operatorArray = userInput.split(/[0123456789]/);
+        for (let i=0; i<operatorArray.length; i++) {
+            if (operatorArray[i] !== "") {
+                myOperators.push(operatorArray[i]);
+            }
+        }
         console.log(myNumbers);
-        //let cleanSubject = eSubject.replace( /[^a-zA-Z0-9' \t]/gi, "" );
+        console.log(myOperators);
+        
     }
 
 
