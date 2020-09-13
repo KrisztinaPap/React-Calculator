@@ -10,14 +10,14 @@ export default function Switch() {
     return (
         <>
             <div className="toggleBox">   
-                <div>Fields</div>
+                <div>Basic</div>
                 <div>
                     <label className="switch">
                     <input id="checkbox" type="checkbox" onChange={ event => { setOneInput( !oneInput ) } } value={ oneInput }/>
                     <span className="slider round"></span>
                     </label>
                 </div>
-                <div>One input</div>
+                <div>Advanced</div>
             </div>
                 <Calculator value={oneInput} />
         </>
