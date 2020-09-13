@@ -3,6 +3,7 @@ My React Calculator
 
 ## Purpose
 To build a simple calculator using create-react-app
+Please note that at this time the caculator cannot handle brackets.
 
 ## Author
 Krisztina Pap
@@ -12,10 +13,10 @@ September 11, 2020
 
 ## Resources
 - [React Documentation: Forms](https://reactjs.org/docs/forms.html)
-- Troubleshooting help from Aaron Barthel (function was outside my main function) - Thank you, Aaron!
 - [w3schools: HTML form elements](https://www.w3schools.com/html/html_form_elements.asp)
 - [w3schools: toFixed() method](https://www.w3schools.com/jsref/jsref_tofixed.asp)
-
+- Troubleshooting help from Aaron Barthel (function was outside my main function) - Thank you, Aaron!
+- Additional thank-you to Kenji for his excellent explanation of how to break down and work with the one-field input
 
 ## Trello Project Board
 https://trello.com/b/kU0ptJmt/react-calculator
