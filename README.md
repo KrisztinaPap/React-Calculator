@@ -2,7 +2,8 @@
 My React Calculator
 
 ## Purpose
-To build a simple calculator using create-react-app
+To build a simple calculator using create-react-app.
+
 Please note that at this time the caculator cannot handle brackets.
 
 ## Author
