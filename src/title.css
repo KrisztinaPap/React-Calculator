@@ -1,3 +1,8 @@
+/* Citation: 
+                https://www.w3schools.com/howto/howto_css_switch.asp
+                Adding a checkbox that looks like a toggle thanks to css formatting
+                The below code blocks were borrowed from w3schools. They format a checkbox to look like a sliding toggle. */
+
 .switch {
     position: relative;
     display: inline-block;

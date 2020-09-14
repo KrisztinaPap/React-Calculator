@@ -16,6 +16,7 @@ September 11, 2020
 - [React Documentation: Forms](https://reactjs.org/docs/forms.html)
 - [w3schools: HTML form elements](https://www.w3schools.com/html/html_form_elements.asp)
 - [w3schools: toFixed() method](https://www.w3schools.com/jsref/jsref_tofixed.asp)
+- [w3schools: toggle switch](https://www.w3schools.com/howto/howto_css_switch.asp)
 - Troubleshooting help from Aaron Barthel (function was outside my main function) - Thank you, Aaron!
 - Additional thank-you to Kenji for his excellent explanation of how to break down and work with the one-field input
 
